@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Navbar from '../components/Navbar';
+
 import {MuiThemeProvider, createMuiTheme} from "@material-ui/core";
-import purple from "@material-ui/core/colors/purple";
+import Welcome from "./Welcome";
 
 const theme = createMuiTheme({
     palette: {
@@ -23,10 +24,8 @@ class App extends Component {
     render() {
         return (
             <MuiThemeProvider theme={theme}>
-                <div>
                     <Navbar/>
-                    app
-                </div>
+                    <Welcome/>
             </MuiThemeProvider>
         );
     }

@@ -12,8 +12,6 @@ import purple from '@material-ui/core/colors/purple';
 const styles = {
     root: {
         flexGrow: 1,
-        background:'#E3E3E3',
-        color:'#E3E3E3',
     },
     grow: {
         flexGrow: 1,
@@ -28,15 +26,13 @@ const styles = {
     },
 };
 
-
-
 function ButtonAppBar(props) {
     const { classes } = props;
 
-    return (
-        <div className={classes.root}>
-            <AppBar position="static" color="primary">
-                <Toolbar>
+                    return (
+                    <div className={classes.root}>
+                        <AppBar position="fixed" color="primary">
+                            <Toolbar>
                     <img className={classes.img} src={Logo} alt={Logo}/>
                     <Typography variant="h6" className={classes.grow}>
 

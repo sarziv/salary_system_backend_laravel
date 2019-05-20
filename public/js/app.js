@@ -106007,8 +106007,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/src/components/Navbar.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
-/* harmony import */ var _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/colors/purple */ "./node_modules/@material-ui/core/colors/purple.js");
-/* harmony import */ var _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome */ "./resources/js/src/components/Welcome.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -106061,7 +106060,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MuiThemeProvider"], {
         theme: theme
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), "app"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Welcome__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -106113,9 +106112,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var styles = {
   root: {
-    flexGrow: 1,
-    background: '#E3E3E3',
-    color: '#E3E3E3'
+    flexGrow: 1
   },
   grow: {
     flexGrow: 1
@@ -106135,7 +106132,7 @@ function ButtonAppBar(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    position: "static",
+    position: "fixed",
     color: "primary"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: classes.img,
@@ -106157,6 +106154,115 @@ ButtonAppBar.propTypes = {
 
 /***/ }),
 
+/***/ "./resources/js/src/components/Welcome.js":
+/*!************************************************!*\
+  !*** ./resources/js/src/components/Welcome.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_thomas_buhler_301493_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/thomas-buhler-301493-unsplash.jpg */ "./resources/js/src/img/thomas-buhler-301493-unsplash.jpg");
+/* harmony import */ var _img_thomas_buhler_301493_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_thomas_buhler_301493_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var Welcome =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Welcome, _Component);
+
+  function Welcome() {
+    _classCallCheck(this, Welcome);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Welcome).apply(this, arguments));
+  }
+
+  _createClass(Welcome, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.img
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "d-flex justify-content-center",
+        style: styles.text
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fontBigColor"
+      }, "BLS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.textlower,
+        className: "fontSmallColor"
+      }, "Salary"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.textlower2,
+        className: "fontSmallColor"
+      }, "System")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "d-flex justify-content-center",
+        style: styles.login
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "btn btn-outline-light btnoverride"
+      }, "Get Started")));
+    }
+  }]);
+
+  return Welcome;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var styles = {
+  img: {
+    zIndex: -2,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: '100vh',
+    width: 'auto',
+    backgroundImage: "url(".concat(_img_thomas_buhler_301493_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")")
+  },
+  text: {
+    clipPath: 'polygon(0 0, 50% 0, 100% 48%, 100% 70%, 100% 100%, 50% 100%, 0 50%, 0 25%)',
+    background: 'rgba(0,0,0,0.4)',
+    position: 'relative',
+    fontSize: '5vh',
+    top: '40%',
+    width: 'auto',
+    color: 'white',
+    zIndex: 1
+  },
+  textlower: {
+    marginTop: '5vh'
+  },
+  textlower2: {
+    marginTop: '10vh'
+  },
+  login: {
+    position: 'relative',
+    margin: 'auto',
+    top: '50%'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Welcome);
+
+/***/ }),
+
 /***/ "./resources/js/src/img/bls-s-s_logo.png":
 /*!***********************************************!*\
   !*** ./resources/js/src/img/bls-s-s_logo.png ***!
@@ -106165,6 +106271,17 @@ ButtonAppBar.propTypes = {
 /***/ (function(module, exports) {
 
 module.exports = "/images/bls-s-s_logo.png?ae7814739c6e97034d1726b625ced4f7";
+
+/***/ }),
+
+/***/ "./resources/js/src/img/thomas-buhler-301493-unsplash.jpg":
+/*!****************************************************************!*\
+  !*** ./resources/js/src/img/thomas-buhler-301493-unsplash.jpg ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/thomas-buhler-301493-unsplash.jpg?6dba9449d4095576a3671173c3b530d8";
 
 /***/ }),
 

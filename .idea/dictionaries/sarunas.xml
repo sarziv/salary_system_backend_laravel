@@ -2,7 +2,9 @@
   <dictionary name="sarunas">
     <words>
       <w>appbar</w>
+      <w>btnoverride</w>
       <w>navbar</w>
+      <w>textlower</w>
     </words>
   </dictionary>
 </component>

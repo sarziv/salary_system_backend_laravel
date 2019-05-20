@@ -1,8 +1,21 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Share Tech', sans-serif;
+}
+.fontBigColor {
+  color:#ED5D06;
+}
+.fontSmallColor {
+  color:#40AC6F;
+}
+.btnoverride {
+ font-size: 4vh !important;
+}

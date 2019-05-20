@@ -106238,7 +106238,6 @@ var styles = {
     backgroundImage: "url(".concat(_img_thomas_buhler_301493_unsplash_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, ")")
   },
   text: {
-    clipPath: 'polygon(0 0, 50% 0, 100% 48%, 100% 70%, 100% 100%, 50% 100%, 0 50%, 0 25%)',
     background: 'rgba(0,0,0,0.4)',
     position: 'relative',
     fontSize: '5vh',
@@ -106270,7 +106269,7 @@ var styles = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/bls-s-s_logo.png?ae7814739c6e97034d1726b625ced4f7";
+module.exports = "/images/bls-s-s_logo.png?6ad4067368e112877fcd6cc892a2d16c";
 
 /***/ }),
 

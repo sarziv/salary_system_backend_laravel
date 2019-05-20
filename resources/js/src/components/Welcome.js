@@ -31,7 +31,7 @@ const styles = {
         backgroundImage: `url(${Background})`,
     },
     text: {
-        clipPath:'polygon(0 0, 50% 0, 100% 48%, 100% 70%, 100% 100%, 50% 100%, 0 50%, 0 25%)',
+
         background:'rgba(0,0,0,0.4)',
         position:'relative',
         fontSize:'5vh',

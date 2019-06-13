@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'BLS_API') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -20,7 +20,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div class="container-fluid justify-content-center">
+        <h1>BLS-API</h1>
+        <h4>Developer: Šarūnas Živila</h4><br>
+        <h2>Code:github.com/sarziv - Sorry but its privated and only will be given to BLS staff</h2><br>
+        <h4>Front-end: React.js</h4><br>
+        <h4>Backend-end: Laravel + Passport</h4><br>
+        <h6>Problems with site? Call: +370687020656</h6>
     </div>
 </body>
 </html>

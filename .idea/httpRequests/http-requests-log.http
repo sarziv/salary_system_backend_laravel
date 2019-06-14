@@ -1,0 +1,30 @@
+POST http://salaryapi.local/api/auth/signup
+Accept: */*
+Cache-Control: no-cache
+
+{ 	"name":"Sarunas", 	"email":"sarasKffa5ras11@gmail.com", 	"password":"123456", 	"password_confirmation":"123456" }
+
+<> 2019-06-14T111103.302.html
+
+###
+
+POST http://salaryapi.local/api/auth/signup
+Accept: */*
+Cache-Control: no-cache
+
+{ 	"name":"Sarunas", 	"email":"sarasKffa5ras11@gmail.com", 	"password":"123456", 	"password_confirmation":"123456" }
+
+<> 2019-06-14T111052.200.html
+
+###
+
+POST http://salaryapi.local/api/auth/signup
+Accept: */*
+Cache-Control: no-cache
+
+{ 	"name":"Sarunas", 	"email":"sarasKa5ras11@gmail.com", 	"password":"123456", 	"password_confirmation":"123456" }
+
+<> 2019-06-14T111023.200.html
+
+###
+

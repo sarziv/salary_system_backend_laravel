@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -23,9 +24,10 @@
     <div class="container-fluid justify-content-center">
         <h1>BLS-API</h1>
         <h4>Developer: Šarūnas Živila</h4><br>
-        <h2>Code:github.com/sarziv - Sorry but its privated and only will be given to BLS staff</h2><br>
-        <h4>Front-end: React.js</h4><br>
-        <h4>Backend-end: Laravel + Passport</h4><br>
+        <h4>Open source project</h4><br>
+        <h4>Front-end: React.js[Material-UI,CSS3,HTML5,Bootstrap4]</h4><br>
+        <h4>Backend-end: Laravel[PHP]</h4><br>
+        <h4>Made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i></h4><br>
         <h6>Problems with site? Call: +370687020656</h6>
     </div>
 </body>

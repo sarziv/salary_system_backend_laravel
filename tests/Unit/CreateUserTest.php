@@ -30,6 +30,7 @@ class CreateUserTest extends TestCase
             ]
         ]);
         $this->assertEquals(201, $response->getStatusCode());
-
+        $this->assertEquals("Created", $response->getReasonPhrase());
     }
+
 }

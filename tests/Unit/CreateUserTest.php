@@ -3,15 +3,14 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use GuzzleHttp\Client;
-use GuzzleHttp\RequestOptions;
 use Faker\Factory;
 
 class CreateUserTest extends TestCase
 {
 
     protected $email;
-    protected $client;
+    protected $faker;
+    protected $url = 'http://salaryapi.local/api/auth/signup';
 
     /**
      * Constructor
@@ -19,10 +18,12 @@ class CreateUserTest extends TestCase
     public function __construct()
     {
         parent::__construct();
-        $this->client = new Client();
-        $faker = Factory::create();
-        $this->email = $faker->email;
+        //Faker genetated email
+        $this->faker = Factory::create();
+        //Pressistant email
+        $this->email = $this->faker->email;
     }
+
     /**
      * Test HTTP
      */
@@ -37,19 +38,75 @@ class CreateUserTest extends TestCase
      */
     public function testCreateNewUser()
     {
-        $url = 'http://salaryapi.local/api/auth/signup';
+        $body = [
+            "name" => "TestCase",
+            "email" => $this->email,
+            "password" => "testpassword",
+            "password_confirmation" => "testpassword"
+        ];
+        $response = $this->withHeaders([
+            'X-Header' => 'Value',
+        ])->json('POST', $this->url, $body);
 
-        $response = $this->client->post($url, [
-            RequestOptions::JSON => [
-                "name" => "TestCase",
-                "email" => $this->email,
-                "password" => "testpassword",
-                "password_confirmation" => "testpassword"
-            ]
-        ]);
-        $this->assertEquals(201, $response->getStatusCode());
-        $this->assertEquals("Created", $response->getReasonPhrase());
+        $response
+            ->assertStatus(201)
+            ->assertJson([
+                'message' => 'Successfully created user!'
+            ]);
     }
 
+    /**
+     * Create new user password not matching
+     */
+    public function testCreateNewUserPassowrdDidNotMatch()
+    {
+        $body = [
+            "name" => "TestCase",
+            "email" => $this->faker->email,
+            "password" => "testpassword1",
+            "password_confirmation" => "testpassword2"
+        ];
+        $response = $this->withHeaders([
+            'X-Header' => 'Value',
+        ])->json('POST', $this->url, $body);
+
+        $response
+            ->assertStatus(422)
+            ->assertJsonStructure( [
+                "message",
+                    "errors" => [
+                    "password"=> [
+                        "0",
+                        ]
+                    ]
+            ]);
+    }
+
+    /**
+     * Create new user with duplicate email
+     */
+    public function testCreateNewUserWithSameEmail()
+    {
+        $body = [
+            "name" => "TestCase",
+            "email" => "Luki@gmail.com",
+            "password" => "testpassword",
+            "password_confirmation" => "testpassword"
+        ];
+        $response = $this->withHeaders([
+            'X-Header' => 'Value',
+        ])->json('POST', $this->url, $body);
+
+        $response
+            ->assertStatus(422)
+            ->assertJsonStructure( [
+                "message",
+                "errors" => [
+                    "email"=> [
+                        "0",
+                    ]
+                ]
+            ]);
+    }
 
 }

@@ -1,1 +1,2 @@
-# salary_system_react
+In development
+Backend: Laravel with passport API

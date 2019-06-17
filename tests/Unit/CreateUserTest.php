@@ -34,12 +34,12 @@ class CreateUserTest extends TestCase
     }
 
     /**
-     *Create unique new user
+     *  Create unique new user
      */
     public function testCreateNewUser()
     {
         $body = [
-            "name" => "TestCase",
+            "name" => "CreateUser",
             "email" => $this->email,
             "password" => "testpassword",
             "password_confirmation" => "testpassword"
@@ -61,7 +61,7 @@ class CreateUserTest extends TestCase
     public function testCreateNewUserPassowrdDidNotMatch()
     {
         $body = [
-            "name" => "TestCase",
+            "name" => "CreateUser",
             "email" => $this->faker->email,
             "password" => "testpassword1",
             "password_confirmation" => "testpassword2"
@@ -88,11 +88,17 @@ class CreateUserTest extends TestCase
     public function testCreateNewUserWithSameEmail()
     {
         $body = [
-            "name" => "TestCase",
-            "email" => "Luki@gmail.com",
+            "name" => "MasterUser",
+            "email" => $this->faker->email,
             "password" => "testpassword",
             "password_confirmation" => "testpassword"
         ];
+        //Creating user first time
+        $response = $this->withHeaders([
+            'X-Header' => 'Value',
+        ])->json('POST', $this->url, $body);
+
+        //Creating user second time
         $response = $this->withHeaders([
             'X-Header' => 'Value',
         ])->json('POST', $this->url, $body);

@@ -53,6 +53,10 @@ class UserLoginTest extends TestCase
             ]);
     }
 
+
+    /**
+     * Create User -> Login -> get authentication
+     */
     public function testLoginUser()
     {
         $bodyNewUser = [

@@ -55,7 +55,7 @@ class UserLoginTest extends TestCase
     /**
      * Create User -> Login -> get authentication
      */
-    public function testLoginUser()
+    public function testUserLogin()
     {
         $bodyNewUser = [
             "name" => "UserLogin",
@@ -69,9 +69,10 @@ class UserLoginTest extends TestCase
             "remember_me"=> true
         ];
         //Create user
-        $response = $this->withHeaders([
+        $this->withHeaders([
             'X-Header' => 'Value',
-        ])->json('POST','http://salaryapi.local/api/auth/signup' , $bodyNewUser);
+        ])->json('POST','http://salaryapi.local/api/auth/signup' , $bodyNewUser)
+            ->assertStatus(201);
         //Login with new user
         $response = $this->withHeaders([
             'X-Header' => 'Value',

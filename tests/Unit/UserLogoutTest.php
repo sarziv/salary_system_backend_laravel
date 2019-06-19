@@ -2,10 +2,10 @@
 
 namespace Tests\Unit;
 
-use Tests\TestCase;
 use Faker\Factory;
+use Tests\TestCase;
 
-class GetUserDataTest extends TestCase
+class UserLogoutTest extends TestCase
 {
     protected $email;
 
@@ -23,13 +23,14 @@ class GetUserDataTest extends TestCase
         $response = $this->get('http://salaryapi.local/api/auth/user');
         $response->assertStatus(302);
     }
+
     /**
      * User Details Register -> Login(generate token) -> Get user Details
      */
-    public function testUserDataFullProcess()
+    public function testUserLogout()
     {
         $bodyNewUser = [
-            "name" => "UserLogin",
+            "name" => "UserLogout",
             "email" => $this->email,
             "password" => "testpassword",
             "password_confirmation" => "testpassword"
@@ -57,33 +58,26 @@ class GetUserDataTest extends TestCase
             ]);
         //new User token
         $token = $login->json('access_token');
-        $user = $this->withHeaders([
+        $logout = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.$token,
-        ])->json('GET', 'http://salaryapi.local/api/auth/user');
+        ])->json('GET', 'http://salaryapi.local/api/auth/logout');
 
-        $user
+        $logout
             ->assertStatus(200)
-            ->assertJsonStructure([
-                'id',
-                'name' ,
-                'email',
-                'email_verified_at',
-                'created_at',
-                'updated_at'
-            ]);
+            ->assertJson(  ['message' => 'Successfully logged out']);
     }
 
     public function testUserWrongToken() {
         $user = $this->withHeaders([
             'X-Header' => 'Value',
-            'Authorization'=>'Bearer '.'fake token',
-        ])->json('GET', 'http://salaryapi.local/api/auth/user');
+            'Authorization'=>'Bearer '.'Fake-Token',
+        ])->json('GET', 'http://salaryapi.local/api/auth/logout');
 
         $user
             ->assertStatus(401)
-            ->assertJsonStructure([
-                'message',
+            ->assertJson([
+                'message' => 'Unauthenticated.'
             ]);
     }
 

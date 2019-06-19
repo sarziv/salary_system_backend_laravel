@@ -2,11 +2,9 @@
 
 namespace Tests\Unit;
 
-
 use Faker\Factory;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 
 class UserLoginTest extends TestCase
 {
@@ -26,7 +24,7 @@ class UserLoginTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testLoginNewUserHTTP()
+    public function testLoginHTTP()
     {
         $response = $this->get($this->url);
         $response->assertStatus(405);

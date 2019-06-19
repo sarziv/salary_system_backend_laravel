@@ -27,7 +27,7 @@ class CreateUserTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testCreateNewUserHTTP()
+    public function testSignupHTTP()
     {
         $response = $this->get('http://salaryapi.local/api/auth/signup');
         $response->assertStatus(405);

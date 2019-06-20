@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
+/*
+ *AuthController
+ */
 Route::group([
     'prefix' => 'auth'
 ], function () {
@@ -20,9 +23,35 @@ Route::group([
     Route::post('signup', 'AuthController@signup');
 
     Route::group([
-        'middleware' => 'auth:api'
+        //TODO PRODUCTION throttle
+        'middleware' => 'auth:api',//'throttle:60,1'
     ], function() {
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');
+    });
+});
+
+/*
+ * RecordsControlelr
+ */
+
+Route::group([
+    'prefix' => 'user'
+], function () {
+    Route::group([
+        //TODO PRODUCTION throttle
+        'middleware' => 'auth:api',//'throttle:60,1'
+    ], function() {
+        //All user records
+        Route::get('records', 'RecordsController@index');
+        //resourse for data
+        Route::get('add', 'RecordsController@store');
+        //Route::put('add/{id}', 'RecordsController@update');
+        Route::delete('add/{id}', 'RecordsController@delete');
+        //Statistic
+        Route::get('statistic', 'RecordsController@index');
+        //Search records
+        Route::get('search', 'RecordsController@index');
+
     });
 });

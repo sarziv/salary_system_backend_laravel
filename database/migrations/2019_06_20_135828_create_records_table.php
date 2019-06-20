@@ -15,11 +15,11 @@ class CreateRecordsTable extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id');
-            $table->integer('pallets');
+            $table->bigInteger('user_id');
+            $table->integer('pallet');
             $table->integer('lines');
-            $table->integer('extrahours');
             $table->integer('vip');
+            $table->integer('extra_hour');
             $table->timestamps();
         });
     }

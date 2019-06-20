@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Records;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class RecordsController extends Controller
@@ -15,10 +16,13 @@ class RecordsController extends Controller
     public function index(Request $request)
     {
         $user_id = $request->user()->id;
-        return Records::select('id','pallet','lines','vip','extra_hour','created_at')
+        return $records = Records::select('id','pallet','lines','vip','extra_hour','created_at')
             ->where('user_id',$user_id)
             ->orderBy('created_at','desc')
-            ->get();
+            ->take(5)->get();
+        return response()->json(
+           $records
+        );
     }
 
     /**

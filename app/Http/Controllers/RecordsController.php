@@ -15,7 +15,7 @@ class RecordsController extends Controller
     public function index(Request $request)
     {
         $user_id = $request->user()->id;
-        return Records::select('id','pallet','lines','vip','created_at')->where('user_id',$user_id)->get();
+        return Records::select('id','pallet','lines','vip','extra_hour','created_at')->where('user_id',$user_id)->get();
     }
 
     /**

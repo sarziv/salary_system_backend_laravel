@@ -1,24 +1,23 @@
 <?php
 
 namespace Tests;
+
 use Faker\Factory;
-use Illuminate\Http\Request;
-use phpDocumentor\Reflection\Types\Integer;
 use App\User;
 
-class UserToken extends TestCase
+class UserToken
 {
     protected $email;
     protected $faker;
 
     public function __construct()
     {
-        parent::__construct();
         $this->faker = Factory::create();
         $this->email = $this->faker->email;
     }
     public function NewUser()
     {
+        //User creation (Singup concept)
         $user = new User([
             'name' => 'GeneratedUser',
             'email' => $this->email,
@@ -26,6 +25,7 @@ class UserToken extends TestCase
         ]);
         $user->save();
 
+        //Token creation (Login concept)
         $tokenResult = $user->createToken('Personal Access Token');
         $token = $tokenResult->token;
         $token->save();

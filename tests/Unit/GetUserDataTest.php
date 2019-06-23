@@ -3,16 +3,17 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Faker\Factory;
+use Tests\UserToken;
 
 class GetUserDataTest extends TestCase
 {
-    protected $email;
+    protected $user;
+    protected $url = 'http://salaryapi.local/api/auth/user';
 
     public function __construct()
     {
         parent::__construct();
-        $this->email = Factory::create()->email;
+        $this->user = new UserToken();
     }
 
     /**
@@ -20,47 +21,20 @@ class GetUserDataTest extends TestCase
      */
     public function testUserHTTP()
     {
-        $response = $this->get('http://salaryapi.local/api/auth/user');
+        $response = $this->get($this->url);
         $response->assertStatus(302);
     }
     /**
-     * User Details Register -> Login(generate token) -> Get user Details
+     * Get user Details
      */
-    public function testUserDataFullProcess()
+    public function testUserDetails()
     {
-        $bodyNewUser = [
-            "name" => "UserLogin",
-            "email" => $this->email,
-            "password" => "testpassword",
-            "password_confirmation" => "testpassword"
-        ];
-        $body = [
-            "email" => $this->email,
-            "password" => "testpassword",
-            "remember_me"=> true
-        ];
-        //Create user
-        $this->withHeaders([
-            'X-Header' => 'Value',
-        ])->json('POST','http://salaryapi.local/api/auth/signup' , $bodyNewUser);
-        //Login with new user
-        $login = $this->withHeaders([
-            'X-Header' => 'Value',
-        ])->json('POST', 'http://salaryapi.local/api/auth/login' , $body);
+        $token = $this->user->NewUser();
 
-        $login
-            ->assertStatus(200)
-            ->assertJsonStructure([
-                'access_token',
-                'token_type' ,
-                'expires_at'
-            ]);
-        //new User token
-        $token = $login->json('access_token');
         $user = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.$token,
-        ])->json('GET', 'http://salaryapi.local/api/auth/user');
+        ])->json('GET', $this->url);
 
         $user
             ->assertStatus(200)
@@ -73,17 +47,19 @@ class GetUserDataTest extends TestCase
                 'updated_at'
             ]);
     }
-
-    public function testUserWrongToken() {
+    /**
+     * Using fake token
+     */
+    public function testUserFakeToken() {
         $user = $this->withHeaders([
             'X-Header' => 'Value',
-            'Authorization'=>'Bearer '.'fake token',
-        ])->json('GET', 'http://salaryapi.local/api/auth/user');
+            'Authorization'=>'Bearer '.'Fake-Token',
+        ])->json('GET', $this->url);
 
         $user
             ->assertStatus(401)
-            ->assertJsonStructure([
-                'message',
+            ->assertJson([
+                'message'=>'Unauthenticated.',
             ]);
     }
 

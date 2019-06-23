@@ -94,7 +94,7 @@ class CreateUserTest extends TestCase
             "password_confirmation" => "testpassword"
         ];
         //Creating user first time
-        $response = $this->withHeaders([
+        $this->withHeaders([
             'X-Header' => 'Value',
         ])->json('POST', $this->url, $body);
 

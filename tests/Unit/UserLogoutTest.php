@@ -2,17 +2,18 @@
 
 namespace Tests\Unit;
 
-use Faker\Factory;
 use Tests\TestCase;
+use Tests\UserToken;
 
 class UserLogoutTest extends TestCase
 {
-    protected $email;
+    protected $user;
+    protected $url = 'http://salaryapi.local/api/auth/logout';
 
     public function __construct()
     {
         parent::__construct();
-        $this->email = Factory::create()->email;
+        $this->user = new UserToken();
     }
 
     /**
@@ -20,48 +21,21 @@ class UserLogoutTest extends TestCase
      */
     public function testUserHTTP()
     {
-        $response = $this->get('http://salaryapi.local/api/auth/user');
+        $response = $this->get('http://salaryapi.local/api/auth/logout');
         $response->assertStatus(302);
     }
 
     /**
-     * User Details Register -> Login(generate token) -> Get user Details
+     * User Logout
      */
     public function testUserLogout()
     {
-        $bodyNewUser = [
-            "name" => "UserLogout",
-            "email" => $this->email,
-            "password" => "testpassword",
-            "password_confirmation" => "testpassword"
-        ];
-        $body = [
-            "email" => $this->email,
-            "password" => "testpassword",
-            "remember_me"=> true
-        ];
-        //Create user
-        $this->withHeaders([
-            'X-Header' => 'Value',
-        ])->json('POST','http://salaryapi.local/api/auth/signup' , $bodyNewUser);
-        //Login with new user
-        $login = $this->withHeaders([
-            'X-Header' => 'Value',
-        ])->json('POST', 'http://salaryapi.local/api/auth/login' , $body);
+        $token = $this->user->NewUser();
 
-        $login
-            ->assertStatus(200)
-            ->assertJsonStructure([
-                'access_token',
-                'token_type' ,
-                'expires_at'
-            ]);
-        //new User token
-        $token = $login->json('access_token');
         $logout = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.$token,
-        ])->json('GET', 'http://salaryapi.local/api/auth/logout');
+        ])->json('GET', $this->url);
 
         $logout
             ->assertStatus(200)
@@ -72,7 +46,7 @@ class UserLogoutTest extends TestCase
         $user = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.'Fake-Token',
-        ])->json('GET', 'http://salaryapi.local/api/auth/logout');
+        ])->json('GET', $this->url);
 
         $user
             ->assertStatus(401)

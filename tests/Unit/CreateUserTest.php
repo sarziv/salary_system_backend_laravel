@@ -58,7 +58,7 @@ class CreateUserTest extends TestCase
     /**
      * Create new user password not matching
      */
-    public function testCreateNewUserPassowrdDidNotMatch()
+    public function testCreateNewUserPasswordDidNotMatch()
     {
         $body = [
             "name" => "CreateUser",

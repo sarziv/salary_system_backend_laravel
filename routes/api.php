@@ -55,3 +55,13 @@ Route::group([
 
     });
 });
+
+
+/*
+ * RateController
+ * */
+Route::group([
+    'prefix' => 'rate'
+    ], function() {
+        Route::get('all', 'RateController@index');
+    });

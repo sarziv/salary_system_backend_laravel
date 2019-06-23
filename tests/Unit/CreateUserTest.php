@@ -18,9 +18,9 @@ class CreateUserTest extends TestCase
     public function __construct()
     {
         parent::__construct();
-        //Faker genetated email
+        //Faker email
         $this->faker = Factory::create();
-        //Pressistant email
+        //Persistent email
         $this->email = $this->faker->email;
     }
 

@@ -1,32 +1,36 @@
 <?php
 
 namespace Tests\Unit;
+
 use Tests\TestCase;
 use Tests\UserToken;
 
 class GetUserRecordsTest extends TestCase
 {
 
-    protected $token;
+    protected $User;
     protected $url = 'http://salaryapi.local/api/user/records';
 
     public function __construct()
     {
         parent::__construct();
-        $UserToken = new UserToken();
-        $this->token = $UserToken->Token();
+        $this->User = new UserToken();
     }
     /**
      * User records
      */
-    public function testUserRecords ()
+    public function testUserRecordsNoRecords ()
     {
+        $Token = $this->User->NewUser();
+
         $records = $this->withHeaders([
             'X-Header' => 'Value',
-            'Authorization'=>'Bearer '.$this->token,
+            'Authorization'=>'Bearer '. $Token,
         ])->json('GET', $this->url);
 
-        dd($records);
+        $records->assertStatus(200)->assertJson(
+            []
+        );
     }
 
 }

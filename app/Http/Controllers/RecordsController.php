@@ -73,7 +73,7 @@ class RecordsController extends Controller
                 DB::raw('SUM(vip) as total_vip'),
                 DB::raw('SUM(extra_hour) as total_extra_hour')
             )->get();
-        
+
         return response()->json($stat);
     }
 
@@ -97,6 +97,6 @@ class RecordsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //TODO Destroy records
     }
 }

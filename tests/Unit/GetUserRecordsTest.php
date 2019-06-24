@@ -19,12 +19,12 @@ class GetUserRecordsTest extends TestCase
 
     /**
      * User records
-
+    */
     public function testUserRecords ()
     {
-        //empty
+        //TODO record tests
     }
-*/
+
     /**
      * User records empty
      */

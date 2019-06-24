@@ -42,14 +42,11 @@ Route::group([
         //TODO PRODUCTION throttle
         'middleware' => 'auth:api',//'throttle:60,1'
     ], function() {
-        //All user records
         Route::get('records', 'RecordsController@index');
-        //resourse for data
+        Route::post('statistic', 'RecordsController@currentMonth');
         Route::post('add', 'RecordsController@store');
         //Route::put('add/{id}', 'RecordsController@update');
-        Route::delete('add/{id}', 'RecordsController@delete');
-        //Statistic
-        Route::get('statistic', 'RecordsController@index');
+        //Route::delete('add/{id}', 'RecordsController@delete');
         //Search records
         Route::get('search', 'RecordsController@index');
 

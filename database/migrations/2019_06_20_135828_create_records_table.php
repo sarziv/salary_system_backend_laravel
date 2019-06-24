@@ -17,7 +17,7 @@ class CreateRecordsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id');
             $table->integer('pallet');
-            $table->integer('lines');
+            $table->integer('line');
             $table->integer('vip');
             $table->integer('extra_hour');
             $table->timestamps();

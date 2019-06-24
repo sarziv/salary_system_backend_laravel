@@ -8,7 +8,7 @@ class Records extends Model
 {
 
     protected $fillable = [
-        'user_id','pallet', 'lines', 'vip','extra_hour'
+        'user_id','pallet', 'line', 'vip','extra_hour'
     ];
 
     public function userRecords(){

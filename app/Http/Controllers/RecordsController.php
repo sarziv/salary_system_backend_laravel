@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Records;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class RecordsController extends Controller
 {
     /**
@@ -16,7 +16,7 @@ class RecordsController extends Controller
     public function index(Request $request)
     {
         $user_id = $request->user()->id;
-        $records = Records::select('id','pallet','lines','vip','extra_hour','created_at')
+        $records = Records::select('id','pallet','line','vip','extra_hour','created_at')
             ->where('user_id',$user_id)
             ->orderBy('created_at','desc')
             ->take(5)->get();
@@ -36,13 +36,13 @@ class RecordsController extends Controller
     {
         $request->validate([
             'pallet' => 'required',
-            'lines' => 'required',
+            'line' => 'required',
         ]);
         $user_id = $request->user()->id;
         $record = new Records([
             'user_id'=>$user_id,
             'pallet'=>$request->pallet,
-            'lines'=>$request->lines,
+            'line'=>$request->line,
             'vip'=>$request->vip,
             'extra_hour'=>$request->extra_hour,
         ]);
@@ -51,6 +51,31 @@ class RecordsController extends Controller
         return response()->json([
             'message' => 'Record successfully created!',
         ], 200);
+    }
+
+    public function currentMonth(Request $request)
+    {
+        $request->validate([
+            'year' => 'required',
+            'month' => 'required',
+        ]);
+
+        $user_id = $request->user()->id;
+
+        $stat = DB::table('records')
+            ->where('user_id', '=', $user_id)
+            ->whereYear('created_at',$request->year)
+            ->whereMonth('created_at',$request->month)
+            ->select(
+                DB::raw('count(id) as total_count'),
+                DB::raw('SUM(pallet) as total_pallet'),
+                DB::raw('SUM(line) as total_lines'),
+                DB::raw('SUM(vip) as total_vip'),
+                DB::raw('SUM(extra_hour) as total_extra_hour')
+            )
+            ->orderBy('created_at','desc')
+            ->get();
+        return response()->json($stat);
     }
 
     /**

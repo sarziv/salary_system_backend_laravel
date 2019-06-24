@@ -72,9 +72,8 @@ class RecordsController extends Controller
                 DB::raw('SUM(line) as total_lines'),
                 DB::raw('SUM(vip) as total_vip'),
                 DB::raw('SUM(extra_hour) as total_extra_hour')
-            )
-            ->orderBy('created_at','desc')
-            ->get();
+            )->get();
+        
         return response()->json($stat);
     }
 

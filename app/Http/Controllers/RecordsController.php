@@ -34,7 +34,23 @@ class RecordsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'pallet' => 'required',
+            'lines' => 'required',
+        ]);
+        $user_id = $request->user()->id;
+        $record = new Records([
+            'user_id'=>$user_id,
+            'pallet'=>$request->pallet,
+            'lines'=>$request->lines,
+            'vip'=>$request->vip,
+            'extra_hour'=>$request->extra_hour,
+        ]);
+        $record->save();
 
+        return response()->json([
+            'message' => 'Record successfully created!',
+        ], 200);
     }
 
     /**

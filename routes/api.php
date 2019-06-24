@@ -45,7 +45,7 @@ Route::group([
         //All user records
         Route::get('records', 'RecordsController@index');
         //resourse for data
-        Route::get('add', 'RecordsController@store');
+        Route::post('add', 'RecordsController@store');
         //Route::put('add/{id}', 'RecordsController@update');
         Route::delete('add/{id}', 'RecordsController@delete');
         //Statistic

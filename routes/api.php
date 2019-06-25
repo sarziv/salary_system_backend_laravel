@@ -45,11 +45,7 @@ Route::group([
         Route::get('records', 'RecordsController@index');
         Route::post('statistic', 'RecordsController@currentMonth');
         Route::post('add', 'RecordsController@store');
-        //Route::put('add/{id}', 'RecordsController@update');
-        //Route::delete('add/{id}', 'RecordsController@delete');
-        //Search records
-        Route::get('search', 'RecordsController@index');
-
+        Route::post('search', 'RecordsController@search');
     });
 });
 

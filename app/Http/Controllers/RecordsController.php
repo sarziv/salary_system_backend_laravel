@@ -63,7 +63,7 @@ class RecordsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //Not in plans record should not be changed by user;
     }
 
     /**
@@ -74,7 +74,21 @@ class RecordsController extends Controller
      */
     public function destroy($id)
     {
-        //TODO Destroy records
+        $user = auth('api')->user()->id;
+        if($user === null){
+            return response()->json(["message" => "Unauthorized."],401);
+        }
+        $records = Records::find($id);
+        if($records != null) {
+            if ($user == $records->user_id) {
+                $records->delete();
+                return response()->json(["message" => "Deleted."],200);
+            } else {
+                return response()->json(["message" => "This record don't belong to you."],403);
+            }
+        }else{
+            return response()->json(["message" => "Record do not exist."],404);
+        }
     }
 
     /**

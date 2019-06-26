@@ -46,6 +46,7 @@ Route::group([
         Route::post('statistic', 'RecordsController@currentMonth');
         Route::post('add', 'RecordsController@store');
         Route::post('search', 'RecordsController@search');
+        Route::delete('delete/{id}', 'RecordsController@destroy');
     });
 });
 

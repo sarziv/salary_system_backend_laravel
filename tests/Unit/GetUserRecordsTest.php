@@ -2,7 +2,6 @@
 
 namespace Tests\Unit;
 
-use App\Records;
 use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 use Tests\UserToken;
@@ -18,15 +17,14 @@ class GetUserRecordsTest extends TestCase
         parent::__construct();
         $this->user = new UserToken();
     }
-
     /**
      * User records
     */
-    public function testUserRecords ()
+    public function test_UserRecords ()
     {
 
-        $token = $this->user->NewUser();
-        $user_id = $this->user->UserID();
+        $token = $this->user->UserToken();
+        $user_id = $this->user->UserId();
 
         DB::table('records')->insert([
             'user_id'=>$user_id,
@@ -39,17 +37,25 @@ class GetUserRecordsTest extends TestCase
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '. $token,
         ])->json('GET', $this->url);
-        $records->assertStatus(200)->assertJson(
-            []
+        $records->assertStatus(200)->assertJsonStructure(
+            [ "0" =>[
+                "id",
+                "pallet",
+                "line",
+                "vip",
+                "extra_hour",
+                "created_at"
+                ]
+            ]
         );
     }
 
     /**
      * User records empty
      */
-    public function testUserRecordsEmpty ()
+    public function test_UserRecordsEmpty ()
     {
-        $token = $this->user->NewUser();
+        $token = $this->user->UserToken();
 
         $records = $this->withHeaders([
             'X-Header' => 'Value',

@@ -11,12 +11,15 @@ class UserToken
     protected $faker;
     protected $user_id;
 
+
     public function __construct()
     {
         $this->faker = Factory::create();
         $this->email = $this->faker->email;
+
     }
-    public function NewUser()
+
+    private function Token()
     {
         //User creation (Singup concept)
         $user = new User([
@@ -25,18 +28,24 @@ class UserToken
             'password' => bcrypt('testpassword')
         ]);
         $user->save();
-
+        $this->user_id = $user->id;
         //Token creation (Login concept)
         $tokenResult = $user->createToken('Personal Access Token');
+
         $token = $tokenResult->token;
         $token->save();
-
-        $this->user_id = $user->id;
-        return  $tokenResult->accessToken;
+        return $tokenResult->accessToken;
     }
 
-    public function UserID(){
+    public function UserId()
+    {
         return $this->user_id;
     }
+
+    public function UserToken()
+    {
+        return $this->Token();
+    }
+
 
 }

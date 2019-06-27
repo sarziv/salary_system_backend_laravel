@@ -17,14 +17,14 @@ use Illuminate\Http\Request;
  *AuthController
  */
 Route::group([
-    'prefix' => 'auth'
+    'prefix' => 'auth','throttle:60,1'
 ], function () {
     Route::post('login', 'AuthController@login');
     Route::post('signup', 'AuthController@signup');
 
     Route::group([
         //TODO PRODUCTION throttle
-        'middleware' => 'auth:api',//'throttle:60,1'
+        'middleware' => 'auth:api','throttle:60,1'
     ], function() {
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');
@@ -40,7 +40,7 @@ Route::group([
 ], function () {
     Route::group([
         //TODO PRODUCTION throttle
-        'middleware' => 'auth:api',//'throttle:60,1'
+        'middleware' => 'auth:api','throttle:60,1'
     ], function() {
         Route::get('records', 'RecordsController@index');
         Route::post('statistic', 'RecordsController@currentMonth');
@@ -55,7 +55,7 @@ Route::group([
  * RateController
  * */
 Route::group([
-    'prefix' => 'rate'
+    'prefix' => 'rate','throttle:60,1'
     ], function() {
         Route::get('all', 'RateController@index');
     });

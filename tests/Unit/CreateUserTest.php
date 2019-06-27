@@ -27,7 +27,7 @@ class CreateUserTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testSignupHTTP()
+    public function test_SignupHTTP()
     {
         $response = $this->get('http://salaryapi.local/api/auth/signup');
         $response->assertStatus(405);
@@ -36,7 +36,7 @@ class CreateUserTest extends TestCase
     /**
      *  Create unique new user
      */
-    public function testCreateNewUser()
+    public function test_CreateNewUser()
     {
         $body = [
             "name" => "CreateUser",
@@ -58,7 +58,7 @@ class CreateUserTest extends TestCase
     /**
      * Create new user password not matching
      */
-    public function testCreateNewUserPasswordDidNotMatch()
+    public function test_CreateNewUserPasswordDidNotMatch()
     {
         $body = [
             "name" => "CreateUser",
@@ -85,7 +85,7 @@ class CreateUserTest extends TestCase
     /**
      * Create new user with duplicate email
      */
-    public function testCreateNewUserWithSameEmail()
+    public function test_CreateNewUserWithSameEmail()
     {
         $body = [
             "name" => "MasterUser",

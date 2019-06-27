@@ -19,7 +19,7 @@ class UserLogoutTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testUserHTTP()
+    public function test_UserHTTP()
     {
         $response = $this->get('http://salaryapi.local/api/auth/logout');
         $response->assertStatus(302);
@@ -28,9 +28,9 @@ class UserLogoutTest extends TestCase
     /**
      * User Logout
      */
-    public function testUserLogout()
+    public function test_UserLogout()
     {
-        $token = $this->user->NewUser();
+        $token = $this->user->UserToken();
 
         $logout = $this->withHeaders([
             'X-Header' => 'Value',
@@ -42,7 +42,7 @@ class UserLogoutTest extends TestCase
             ->assertJson(  ['message' => 'Successfully logged out']);
     }
 
-    public function testUserWrongToken() {
+    public function test_UserWrongToken() {
         $user = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.'Fake-Token',

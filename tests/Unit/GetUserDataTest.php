@@ -19,7 +19,7 @@ class GetUserDataTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testUserHTTP()
+    public function test_UserHTTP()
     {
         $response = $this->get($this->url);
         $response->assertStatus(302);
@@ -27,9 +27,9 @@ class GetUserDataTest extends TestCase
     /**
      * Get user Details
      */
-    public function testUserDetails()
+    public function test_UserDetails()
     {
-        $token = $this->user->NewUser();
+        $token = $this->user->UserToken();
 
         $user = $this->withHeaders([
             'X-Header' => 'Value',
@@ -50,7 +50,7 @@ class GetUserDataTest extends TestCase
     /**
      * Using fake token
      */
-    public function testUserFakeToken() {
+    public function test_UserFakeToken() {
         $user = $this->withHeaders([
             'X-Header' => 'Value',
             'Authorization'=>'Bearer '.'Fake-Token',

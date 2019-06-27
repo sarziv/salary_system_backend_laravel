@@ -24,7 +24,7 @@ class UserLoginTest extends TestCase
     /**
      * Test HTTP
      */
-    public function testLoginHTTP()
+    public function test_LoginHTTP()
     {
         $response = $this->get($this->url);
         $response->assertStatus(405);
@@ -55,8 +55,9 @@ class UserLoginTest extends TestCase
     /**
      * Create User -> Login -> get authentication
      */
-    public function testUserLogin()
+    public function test_UserLogin()
     {
+        //TODO remake!! Bad
         $bodyNewUser = [
             "name" => "UserLogin",
             "email" => $this->email,

@@ -36,8 +36,13 @@ class RecordsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'pallet' => 'required',
-            'line' => 'required',
+            'pallet' => 'required|integer',
+            'line' => 'required|integer',
+        ],[
+            "pallet.required" =>"Pallet parameter is required.",
+            "pallet.integer" =>"Pallet parameter must be a integer.",
+            "line.required" =>"Line parameter is required.",
+            "line.integer" =>"Line parameter must be a integer."
         ]);
         $user_id = $request->user()->id;
         $record = new Records([
@@ -104,10 +109,10 @@ class RecordsController extends Controller
             'month' => 'required|integer',
         ],
             [
-                'year.required' => 'year is field required.',
-                'year.integer' => 'year should be a number.',
-                'month.required' => 'month is field required.',
-                'month.integer' => 'month should be a ingeter.'
+                'year.required' => 'Year parameter is required.',
+                'year.integer' => 'Year parameter must be a integer.',
+                'month.required' => 'Month parameter is required.',
+                'month.integer' => 'Month parameter must be a integer.'
             ]);
 
 
@@ -132,13 +137,20 @@ class RecordsController extends Controller
     {
         $request->validate([
             'from' =>
-                [   'year' => 'required',
-                    'month' => 'required',
-                    'day' => 'required',],
+                [   'year' => 'required|integer',
+                    'month' => 'required|integer',
+                    'day' => 'required|integer',],
             'to' =>
-                [   'year' => 'required',
-                    'month' => 'required',
-                    'day' => 'required',],
+                [   'year' => 'required|integer',
+                    'month' => 'required|integer',
+                    'day' => 'required|integer',],
+        ],[
+            "from.year.*"=>"Year paremeter required as integer.",
+            "from.month.*"=>"Month paremeter required as integer.",
+            "from.day.*"=>"Day paremeter required as integer.",
+            "to.year.*"=>"Year paremeter required as integer.",
+            "to.year.*"=>"Month paremeter required as integer.",
+            "to.year.*"=>"Day paremeter required as integer.",
         ]);
 
         $user_id = $request->user()->id;

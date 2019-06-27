@@ -9,6 +9,7 @@ class UserToken
 {
     protected $email;
     protected $faker;
+    protected $user_id;
 
     public function __construct()
     {
@@ -30,7 +31,12 @@ class UserToken
         $token = $tokenResult->token;
         $token->save();
 
+        $this->user_id = $user->id;
         return  $tokenResult->accessToken;
+    }
+
+    public function UserID(){
+        return $this->user_id;
     }
 
 }

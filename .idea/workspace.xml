@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5becf75e-8035-41d4-a932-d53f7e039f09" name="Default Changelist" comment="" />
+    <list default="true" id="5becf75e-8035-41d4-a932-d53f7e039f09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/UserAddTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserAddTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/UserSearchTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserSearchTest.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserRecordsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="49" column="10" selection-start-line="25" selection-start-column="8" selection-end-line="49" selection-end-column="10" />
+            <state relative-caret-position="161">
+              <caret line="52" column="7" selection-start-line="11" selection-start-column="2" selection-end-line="70" />
               <folding>
                 <element signature="e#31#65#0#PHP" expanded="true" />
               </folding>
@@ -70,24 +74,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecordsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="297">
+              <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
               <folding>
-                <element signature="e#30#49#0#PHP" expanded="true" />
+                <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecordsController.php">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/records">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <element signature="e#40#56#0#PHP" expanded="true" />
+                <element signature="e#30#49#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,58 +130,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RateController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/UserLogoutTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/GetRateTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="246">
+              <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/UserSearchTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="399">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+              <folding>
+                <element signature="e#30#64#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/src/components/Navbar.js" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_13_154127_create_records_table.php" />
@@ -225,8 +220,10 @@
         <option value="$PROJECT_DIR$/tests/Unit/GetRate.php" />
         <option value="$PROJECT_DIR$/tests/Unit/GetRateTest.php" />
         <option value="$PROJECT_DIR$/tests/Unit/GetUserStatisticTest.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/UserAddTest.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/UserAddTest.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/UserSearchTest.php" />
       </list>
     </option>
   </component>
@@ -451,6 +448,15 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Unit" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -490,6 +496,186 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;from&quot;: [&#10;    {&#10;      &quot;year&quot;: 2018,&#10;      &quot;month&quot;: 6,&#10;      &quot;day&quot;: 1&#10;    }&#10;  ],&#10;  &quot;to&quot;: [&#10;    {&#10;      &quot;year&quot;: 2022,&#10;      &quot;month&quot;: 6,&#10;      &quot;day&quot;: 20&#10;    }&#10;  ]&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: 2018,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: &quot;&quot;,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: 2017,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y.eyJhdWQiOiIxIiwianRpIjoiOWZlOTE4YmY4MDdmMGI2NDlmNTMwODE5ZjFjOTQwZDhjMDNjY2ZkYzlkNzQ5ZDM0OGZhYzU3YmY2Mzc5ZGYzYzc4MzZkYjllNGVhMTk1MjEiLCJpYXQiOjE1NjE0ODY1NTYsIm5iZiI6MTU2MTQ4NjU1NiwiZXhwIjoxNTkzMTA4OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.j6wsLK4Y8CbvQZWUIh-EiFmCDw2GB7E2GyCoMJjb258PUR0BV6A0YkivYR7badlKr_Wkq3Llwtpsg06boYIi87iuBOLxBb41Wr8ipxpJTZ5oTdYhwSjOVUwoS90PBVvk9NkSSywjgCcysI7FDaVfWFEk17vS4uCVt2NrYjup47DCDyxhzxFYoUO-GlqyHjwEzs8MKmLQHfKE-JKct0JuXcpGN7i60lLvarA6zlD9mVbyNrTWu-GbKInLW7n5cS1tnbLUsrkgfv27TTgVgAzq4XeZbPJW5UWqSQv2sTOw61wK6PxyDLkL3l55tnyarsC9Q44uurCjaq5KG2XLXNuYxm5MbqMXSP4Ny12SF-nC1L3SPnVHnDzOfyhJ3Vkx3ktKqZobOtrv7PYzvBzdSowkmtkX8znh07nwF-0hexNcHRcSN5V1gAGzQb69cOfoOk9oNmKz2OatUg2JYHoJfC5zmcwigmKl2dqFmz11VGJtsjrDu4FmUemzARe40zyEU93R3CyvhGehWgNmcUz663UjU4yaQ93YCzakoCLZks2xu_lZyRe8QOGmgQlyVfunWprB-TjN9zzQggaYpxZvUH8TkSYM6fNuzifAVNRb0-r9jpNnqFzsKybaoPylQudQ2WAzgsFrVbozHes2AeZ82cJplqoE1XkF4PWtz5uJkWRUnus" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: 2017,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMDg4N2NkZDExYWY3MGJmMTk3ZDkyZjdlMDMyMjcwNTM5OWU1ZTFjY2U1NWIzMDVmMDY3ZWE4NTM3M2UzNDBkMmQxNjlmNGRjYmU4MGVlIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwODg3Y2RkMTFhZjcwYmYxOTdkOTJmN2UwMzIyNzA1Mzk5ZTVlMWNjZTU1YjMwNWYwNjdlYTg1MzczZTM0MGQyZDE2OWY0ZGNiZTgwZWUiLCJpYXQiOjE1NjE2NzkyMDEsIm5iZiI6MTU2MTY3OTIwMSwiZXhwIjoxNTkzMzAxNjAxLCJzdWIiOiI3ODEiLCJzY29wZXMiOltdfQ.UyIF8C0TMSqlQG6e3jBrU5bUCtNkuD2Dx1lM3OO0viW1zXAwSo4zUDa8ZTgsr2o-mNNKf1lHJ3yOeukeakrqAQkgimNkB17pL9fCSLTqzyd55OE0OIGZHro_XsCvtr1NHTeIekdTOp04rTVcYNBXeqatJBoOpdRM6hBM_cQ0nHchA2lDibOfvVr9GKTCGlCSJJn-RVO2pLIJU1BddU4c3jfWejwrMQ7bGfJyQc1WfuGFuSIu_8paELjlycIP7PHzG2cwkLj8YsTXMRnfh2vfY5A5COSJA0_oLki1Ij0zvCGnXEcX8Hp8wb93_ACiBt7thOVfo07ZHL40Oio7D__DH5Brq-77XPlWvExsYCxVCZD3-VdERrFOirjfHW1xhTAsFfcsovjHVBZtr941uiEQ7RDSoIVvuLnEVNGETUsZrSzWIBisO4URA4R20D-on3X9r2z9tT2yQUeOYtUiujKiw1JYE8QZgwnjB8KQHMY_dqRLyjQzwMjfbMOYJgj8jG8e96kmBcAoLK3rUXWi0XPkU7cn46bRqx2L2k9xWshSAPFXdgnvTUeFoaxK398fci6ndVlv7QmPCmxiZWaiVQrBvirxBMnqG1lll2mPYtso0TJp035WWBV-NVjjeBZYh9LAmz92mQah7T-fn3OFv7na6S6-lAiscGfxa9HYVaMg3_Y.eyJhdWQiOiIxIiwianRpIjoiOWZlOTE4YmY4MDdmMGI2NDlmNTMwODE5ZjFjOTQwZDhjMDNjY2ZkYzlkNzQ5ZDM0OGZhYzU3YmY2Mzc5ZGYzYzc4MzZkYjllNGVhMTk1MjEiLCJpYXQiOjE1NjE0ODY1NTYsIm5iZiI6MTU2MTQ4NjU1NiwiZXhwIjoxNTkzMTA4OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.j6wsLK4Y8CbvQZWUIh-EiFmCDw2GB7E2GyCoMJjb258PUR0BV6A0YkivYR7badlKr_Wkq3Llwtpsg06boYIi87iuBOLxBb41Wr8ipxpJTZ5oTdYhwSjOVUwoS90PBVvk9NkSSywjgCcysI7FDaVfWFEk17vS4uCVt2NrYjup47DCDyxhzxFYoUO-GlqyHjwEzs8MKmLQHfKE-JKct0JuXcpGN7i60lLvarA6zlD9mVbyNrTWu-GbKInLW7n5cS1tnbLUsrkgfv27TTgVgAzq4XeZbPJW5UWqSQv2sTOw61wK6PxyDLkL3l55tnyarsC9Q44uurCjaq5KG2XLXNuYxm5MbqMXSP4Ny12SF-nC1L3SPnVHnDzOfyhJ3Vkx3ktKqZobOtrv7PYzvBzdSowkmtkX8znh07nwF-0hexNcHRcSN5V1gAGzQb69cOfoOk9oNmKz2OatUg2JYHoJfC5zmcwigmKl2dqFmz11VGJtsjrDu4FmUemzARe40zyEU93R3CyvhGehWgNmcUz663UjU4yaQ93YCzakoCLZks2xu_lZyRe8QOGmgQlyVfunWprB-TjN9zzQggaYpxZvUH8TkSYM6fNuzifAVNRb0-r9jpNnqFzsKybaoPylQudQ2WAzgsFrVbozHes2AeZ82cJplqoE1XkF4PWtz5uJkWRUnus" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: 2017,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlmZTkxOGJmODA3ZjBiNjQ5ZjUzMDgxOWYxYzk0MGQ4YzAzY2NmZGM5ZDc0OWQzNDhmYWM1N2JmNjM3OWRmM2M3ODM2ZGI5ZTRlYTE5NTIxIn0.eyJhdWQiOiIxIiwianRpIjoiOWZlOTE4YmY4MDdmMGI2NDlmNTMwODE5ZjFjOTQwZDhjMDNjY2ZkYzlkNzQ5ZDM0OGZhYzU3YmY2Mzc5ZGYzYzc4MzZkYjllNGVhMTk1MjEiLCJpYXQiOjE1NjE0ODY1NTYsIm5iZiI6MTU2MTQ4NjU1NiwiZXhwIjoxNTkzMTA4OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.j6wsLK4Y8CbvQZWUIh-EiFmCDw2GB7E2GyCoMJjb258PUR0BV6A0YkivYR7badlKr_Wkq3Llwtpsg06boYIi87iuBOLxBb41Wr8ipxpJTZ5oTdYhwSjOVUwoS90PBVvk9NkSSywjgCcysI7FDaVfWFEk17vS4uCVt2NrYjup47DCDyxhzxFYoUO-GlqyHjwEzs8MKmLQHfKE-JKct0JuXcpGN7i60lLvarA6zlD9mVbyNrTWu-GbKInLW7n5cS1tnbLUsrkgfv27TTgVgAzq4XeZbPJW5UWqSQv2sTOw61wK6PxyDLkL3l55tnyarsC9Q44uurCjaq5KG2XLXNuYxm5MbqMXSP4Ny12SF-nC1L3SPnVHnDzOfyhJ3Vkx3ktKqZobOtrv7PYzvBzdSowkmtkX8znh07nwF-0hexNcHRcSN5V1gAGzQb69cOfoOk9oNmKz2OatUg2JYHoJfC5zmcwigmKl2dqFmz11VGJtsjrDu4FmUemzARe40zyEU93R3CyvhGehWgNmcUz663UjU4yaQ93YCzakoCLZks2xu_lZyRe8QOGmgQlyVfunWprB-TjN9zzQggaYpxZvUH8TkSYM6fNuzifAVNRb0-r9jpNnqFzsKybaoPylQudQ2WAzgsFrVbozHes2AeZ82cJplqoE1XkF4PWtz5uJkWRUnus" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{          &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlmZTkxOGJmODA3ZjBiNjQ5ZjUzMDgxOWYxYzk0MGQ4YzAzY2NmZGM5ZDc0OWQzNDhmYWM1N2JmNjM3OWRmM2M3ODM2ZGI5ZTRlYTE5NTIxIn0.eyJhdWQiOiIxIiwianRpIjoiOWZlOTE4YmY4MDdmMGI2NDlmNTMwODE5ZjFjOTQwZDhjMDNjY2ZkYzlkNzQ5ZDM0OGZhYzU3YmY2Mzc5ZGYzYzc4MzZkYjllNGVhMTk1MjEiLCJpYXQiOjE1NjE0ODY1NTYsIm5iZiI6MTU2MTQ4NjU1NiwiZXhwIjoxNTkzMTA4OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.j6wsLK4Y8CbvQZWUIh-EiFmCDw2GB7E2GyCoMJjb258PUR0BV6A0YkivYR7badlKr_Wkq3Llwtpsg06boYIi87iuBOLxBb41Wr8ipxpJTZ5oTdYhwSjOVUwoS90PBVvk9NkSSywjgCcysI7FDaVfWFEk17vS4uCVt2NrYjup47DCDyxhzxFYoUO-GlqyHjwEzs8MKmLQHfKE-JKct0JuXcpGN7i60lLvarA6zlD9mVbyNrTWu-GbKInLW7n5cS1tnbLUsrkgfv27TTgVgAzq4XeZbPJW5UWqSQv2sTOw61wK6PxyDLkL3l55tnyarsC9Q44uurCjaq5KG2XLXNuYxm5MbqMXSP4Ny12SF-nC1L3SPnVHnDzOfyhJ3Vkx3ktKqZobOtrv7PYzvBzdSowkmtkX8znh07nwF-0hexNcHRcSN5V1gAGzQb69cOfoOk9oNmKz2OatUg2JYHoJfC5zmcwigmKl2dqFmz11VGJtsjrDu4FmUemzARe40zyEU93R3CyvhGehWgNmcUz663UjU4yaQ93YCzakoCLZks2xu_lZyRe8QOGmgQlyVfunWprB-TjN9zzQggaYpxZvUH8TkSYM6fNuzifAVNRb0-r9jpNnqFzsKybaoPylQudQ2WAzgsFrVbozHes2AeZ82cJplqoE1XkF4PWtz5uJkWRUnus" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: &quot;&quot;,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://salaryapi.local/api/user/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlmZTkxOGJmODA3ZjBiNjQ5ZjUzMDgxOWYxYzk0MGQ4YzAzY2NmZGM5ZDc0OWQzNDhmYWM1N2JmNjM3OWRmM2M3ODM2ZGI5ZTRlYTE5NTIxIn0.eyJhdWQiOiIxIiwianRpIjoiOWZlOTE4YmY4MDdmMGI2NDlmNTMwODE5ZjFjOTQwZDhjMDNjY2ZkYzlkNzQ5ZDM0OGZhYzU3YmY2Mzc5ZGYzYzc4MzZkYjllNGVhMTk1MjEiLCJpYXQiOjE1NjE0ODY1NTYsIm5iZiI6MTU2MTQ4NjU1NiwiZXhwIjoxNTkzMTA4OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.j6wsLK4Y8CbvQZWUIh-EiFmCDw2GB7E2GyCoMJjb258PUR0BV6A0YkivYR7badlKr_Wkq3Llwtpsg06boYIi87iuBOLxBb41Wr8ipxpJTZ5oTdYhwSjOVUwoS90PBVvk9NkSSywjgCcysI7FDaVfWFEk17vS4uCVt2NrYjup47DCDyxhzxFYoUO-GlqyHjwEzs8MKmLQHfKE-JKct0JuXcpGN7i60lLvarA6zlD9mVbyNrTWu-GbKInLW7n5cS1tnbLUsrkgfv27TTgVgAzq4XeZbPJW5UWqSQv2sTOw61wK6PxyDLkL3l55tnyarsC9Q44uurCjaq5KG2XLXNuYxm5MbqMXSP4Ny12SF-nC1L3SPnVHnDzOfyhJ3Vkx3ktKqZobOtrv7PYzvBzdSowkmtkX8znh07nwF-0hexNcHRcSN5V1gAGzQb69cOfoOk9oNmKz2OatUg2JYHoJfC5zmcwigmKl2dqFmz11VGJtsjrDu4FmUemzARe40zyEU93R3CyvhGehWgNmcUz663UjU4yaQ93YCzakoCLZks2xu_lZyRe8QOGmgQlyVfunWprB-TjN9zzQggaYpxZvUH8TkSYM6fNuzifAVNRb0-r9jpNnqFzsKybaoPylQudQ2WAzgsFrVbozHes2AeZ82cJplqoE1XkF4PWtz5uJkWRUnus" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;from&quot;: [{     &quot;year&quot;: 2017,     &quot;month&quot;: 6,     &quot;day&quot;: 1   }],   &quot;to&quot;: [{     &quot;year&quot;: 2022,     &quot;month&quot;: 6,     &quot;day&quot;: 20   }] }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://salaryapi.local/api/user/search" />
@@ -975,8 +1161,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.rest-api#1">
+  <component name="RunManager" selected="HTTP Request.rest-api_1#1">
     <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_1#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
       <method v="2" />
     </configuration>
     <configuration name="GetUserDataTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -991,23 +1180,13 @@
       <TestRunner class="Tests\UserToken" file="$PROJECT_DIR$/tests/UserToken.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api_1#1" />
         <item itemvalue="HTTP Request.rest-api#1" />
         <item itemvalue="PHPUnit.UserToken" />
         <item itemvalue="PHPUnit.GetUserRecords.testUserRecords" />
         <item itemvalue="PHPUnit.GetUserDataTest" />
-        <item itemvalue="npm.watch" />
       </list>
     </recent_temporary>
   </component>
@@ -1039,7 +1218,7 @@
       <workItem from="1561469878034" duration="14856000" />
       <workItem from="1561559983247" duration="8079000" />
       <workItem from="1561597568280" duration="5294000" />
-      <workItem from="1561650306734" duration="7375000" />
+      <workItem from="1561650306734" duration="13855000" />
     </task>
     <servers />
   </component>
@@ -1064,12 +1243,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197318000" />
+    <option name="totallyTimeSpent" value="203798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495" visible="true" weight="0.30764967" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.495" visible="true" weight="0.30764967" />
       <window_info id="Structure" order="1" sideWeight="0.5041494" side_tool="true" weight="0.27439025" />
       <window_info id="npm" order="2" sideWeight="0.5017668" side_tool="true" weight="0.26773837" />
       <window_info id="Favorites" order="3" sideWeight="0.505" side_tool="true" weight="0.29767185" />
@@ -1087,38 +1267,17 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50166297" side_tool="true" weight="0.2508179" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32715377" />
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.3456925" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49833703" visible="true" weight="0.2857143" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.49833703" visible="true" weight="0.2857143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.101995565" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1191796" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../salary_system_front_react/src/components/user/records/Records.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/cors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/CreatesApplication.php" />
     <entry file="file://$PROJECT_DIR$/tests/Feature/ExampleTest.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1240,13 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_135828_create_records_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1303,28 +1455,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/UserToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/records">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -1381,36 +1515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserStatisticTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="e#31#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserRecordsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="10" selection-start-line="25" selection-start-column="8" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="e#31#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/UserLogoutTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1439,6 +1543,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserRecordsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="52" column="7" selection-start-line="11" selection-start-column="2" selection-end-line="70" />
+          <folding>
+            <element signature="e#31#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RateController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1446,6 +1569,30 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserStatisticTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1459,20 +1606,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/records">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecordsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="297">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/UserSearchTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="399">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding>
+            <element signature="e#30#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

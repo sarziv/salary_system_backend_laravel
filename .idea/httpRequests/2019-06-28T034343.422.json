@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "from.0": [
+      "The from.0 must be an integer."
+    ],
+    "to.0": [
+      "The to.0 must be an integer."
+    ]
+  }
+}

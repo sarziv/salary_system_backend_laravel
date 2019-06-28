@@ -34,11 +34,11 @@ class UserAddTest extends TestCase
             ["message"=>"Record successfully created!"]
         );
     }
-    public function test_UserAddRecordsWithWrongData(){
+    public function test_UserAddRecordsValidation(){
         $token = $this->user->UserToken();
         $data = [
-            "pallet"=>"String",//String error
-            "line"=>"",//Empty error
+            "pallet"=>"String",//Integer error
+            "line"=>"",//Required error
             "vip"=>1,
             "extra_hour"=>1
         ];

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Records;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -104,16 +105,13 @@ class RecordsController extends Controller
      */
     public function currentMonth(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'year' => 'required|integer',
             'month' => 'required|integer',
-        ],
-            [
-                'year.required' => 'Year parameter is required.',
-                'year.integer' => 'Year parameter must be a integer.',
-                'month.required' => 'Month parameter is required.',
-                'month.integer' => 'Month parameter must be a integer.'
-            ]);
+        ]);
+        if($validator->fails()){
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
 
 
         $user_id = $request->user()->id;
@@ -135,23 +133,15 @@ class RecordsController extends Controller
 
     public function search(Request $request)
     {
-        $request->validate([
-            'from' =>
-                [   'year' => 'required|integer',
-                    'month' => 'required|integer',
-                    'day' => 'required|integer',],
-            'to' =>
-                [   'year' => 'required|integer',
-                    'month' => 'required|integer',
-                    'day' => 'required|integer',],
-        ],[
-            "from.year.*"=>"Year paremeter required as integer.",
-            "from.month.*"=>"Month paremeter required as integer.",
-            "from.day.*"=>"Day paremeter required as integer.",
-            "to.year.*"=>"Year paremeter required as integer.",
-            "to.year.*"=>"Month paremeter required as integer.",
-            "to.year.*"=>"Day paremeter required as integer.",
+        $validator = Validator::make($request->all(), [
+            'from.*'=>'required',
+            'to.*'=>'required',
         ]);
+        if($validator->fails()){
+            // here we return all the errors message
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
 
         $user_id = $request->user()->id;
         $from = [

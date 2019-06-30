@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5becf75e-8035-41d4-a932-d53f7e039f09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserAddTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserAddTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserSearchTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserSearchTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="5becf75e-8035-41d4-a932-d53f7e039f09" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +101,17 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/UserSearchTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="246">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="e#30#64#0#PHP" expanded="true" />
               </folding>
@@ -436,17 +443,6 @@
               <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="salary_system_backend_laravel" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salary_system_backend_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salary_system_backend_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="salary_system_backend_laravel" type="b2602c69:ProjectViewProjectNode" />
@@ -1218,7 +1214,7 @@
       <workItem from="1561469878034" duration="14856000" />
       <workItem from="1561559983247" duration="8079000" />
       <workItem from="1561597568280" duration="5294000" />
-      <workItem from="1561650306734" duration="13855000" />
+      <workItem from="1561650306734" duration="13996000" />
     </task>
     <servers />
   </component>
@@ -1243,11 +1239,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203798000" />
+    <option name="totallyTimeSpent" value="203939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.495" visible="true" weight="0.30764967" />
       <window_info id="Structure" order="1" sideWeight="0.5041494" side_tool="true" weight="0.27439025" />
@@ -1267,11 +1262,11 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50166297" side_tool="true" weight="0.2508179" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32715377" />
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.3456925" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.49833703" visible="true" weight="0.2857143" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49833703" visible="true" weight="0.2857143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1191796" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1191796" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1543,15 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserRecordsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1568,16 +1554,6 @@
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#49#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1620,22 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/records">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecordsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1648,11 +1608,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/UserSearchTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="246">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="e#30#64#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/UserAddTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/GetUserDataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/records">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b2ebd1d3-d1e9-4169-b4ab-9286f6df5ba8/schema/homestead/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="9ea910b2-11a4-424d-b545-3d8c7df3b4b3">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>

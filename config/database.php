@@ -66,7 +66,7 @@ return [
             'driver'    => 'mysql',
             'host'      => env('DB_TEST_HOST', 'localhost'),
             'port'      => env('DB_PORT', '3306'),
-            'database'  => env('DB_TEST_DATABASE', 'homestead_test'),
+            'database'  => env('DB_TEST_DATABASE', 'homestead'),
             'username'  => env('DB_TEST_USERNAME', 'root'),
             'password'  => env('DB_TEST_PASSWORD', ''),
             'charset' => 'utf8mb4',

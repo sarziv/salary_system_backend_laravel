@@ -15,10 +15,10 @@ class CreateRatesTable extends Migration
     {
         Schema::create('rates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->double('pallet')->default(0.11);
-            $table->double('lines')->default(0.09);
-            $table->integer('vip')->default(3);
-            $table->integer('extraHour')->default(6);
+            $table->double('pallet');
+            $table->double('lines');
+            $table->integer('vip');
+            $table->integer('extraHour');
         });
     }
 

@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,7 +11,7 @@ use Illuminate\Http\Request;
 |
 */
 
-/*
+/**
  *AuthController
  */
 Route::group([
@@ -23,7 +21,6 @@ Route::group([
     Route::post('signup', 'AuthController@signup');
 
     Route::group([
-        //TODO PRODUCTION throttle
         'middleware' => 'auth:api','throttle:60,1'
     ], function() {
         Route::get('logout', 'AuthController@logout');
@@ -31,7 +28,7 @@ Route::group([
     });
 });
 
-/*
+/**
  * RecordsControlelr
  */
 
@@ -39,7 +36,6 @@ Route::group([
     'prefix' => 'user'
 ], function () {
     Route::group([
-        //TODO PRODUCTION throttle
         'middleware' => 'auth:api','throttle:60,1'
     ], function() {
         Route::get('records', 'RecordsController@index');
@@ -51,7 +47,7 @@ Route::group([
 });
 
 
-/*
+/**
  * RateController
  * */
 Route::group([
@@ -59,3 +55,13 @@ Route::group([
     ], function() {
         Route::get('all', 'RateController@index');
     });
+
+/**
+ * RecoverController
+ */
+Route::group([
+    'prefix' => 'recover', 'throttle:60,1'
+], function () {
+    Route::post('password', 'RecoverController@password');
+    Route::post('link', 'RecoverController@link');
+});
